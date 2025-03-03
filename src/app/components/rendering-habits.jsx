@@ -7,7 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Grid } from '@mui/system';
 
 const ReenderingHabits = () => {
-	const { habits } = useHabitStore();
+	const { habits, removeHabit} = useHabitStore();
 	const today = new Date().toISOString().split('T')[0];
 
 	return (
